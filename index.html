@@ -44,6 +44,76 @@
         .sets a:hover {
             background: #45a049;
         }
+         /* AppBar */
+    .appbar {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+    .appbar button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 14px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .appbar button:hover, 
+    .appbar button.active {
+      background: #4CAF50;
+    }
+    main {
+      padding: 20px;
+    }
+    .year-content {
+      display: none;
+    }
+    .year-content.active {
+      display: block;
+    }
+    .subject {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .subject h2 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+    .sets a {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+        .sets a:hover {
+      background: #45a049;
+    }
+
+    /* footer ko lagi */
+    footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 30px;
+}
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 8px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+
     </style>
 </head>
 <body>
@@ -51,7 +121,15 @@
         <h1>Question Bank</h1>
         <p>Choose a subject to explore question sets</p>
     </header>
+     <!-- AppBar -->
+  <div class="appbar">
+    <button class="active" onclick="showYear('y2080', this)">2080</button>
+    <button onclick="showYear('y2081', this)">2081</button>
+    <button onclick="showYear('y2082', this)">2082</button>
+  </div>
     <main>
+         <!-- 2080 content -->
+    <div id="y2080" class="year-content active">
         <!-- Nepali -->
         <div class="subject">
             <h2>Nepali</h2>
@@ -155,22 +233,133 @@
                
             </div>
         </div>
+
+    </div>
+
+      <!-- 2081 content -->
+  <div id="y2081" class="year-content">
+    <!-- Nepali -->
         <div class="subject">
-            <h2>Privacy Policy</h2>
+            <h2>Nepali</h2>
             <div class="sets">
-               
-                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="2081\Nepali\nepali 1.pdf" target="_blank">Province 1</a>
+                <a href="2081\Nepali\nepali 2.pdf" target="_blank">Province 2</a>
+                <a href="2081\Nepali\nepali 3.pdf"target="_blank">Province 3</a>
+                <a href="2081\Nepali\nepali 4.pdf" target="_blank">Province 4</a>
+                <a href="2081\Nepali\nepali 5.pdf" target="_blank">Province 5</a>
+                <a href="2081\Nepali\nepali 6.pdf" target="_blank">Province 6</a>
+                <a href="2081\Nepali\nepali 7.pdf" target="_blank">Province 7</a>
+            </div>
+        </div>
+   <!--English-->
+   <!-- English -->
+        <div class="subject">
+            <h2>English</h2>
+            <div class="sets">
+                <a href="2081\Nepali\nepali 1.pdf" target="_blank">Province 1</a>
+                <a href="2081\English\english 2.pdf" target="_blank">Province 2</a>
+                <a href="2081\English\english 3.pdf" target="_blank">Province 3</a>
+                <a href="2081\English\english 4.pdf" target="_blank">Province 4</a>
+                <a href="2081\English\english 5.pdf" target="_blank">Province 5</a>
+                <a href="2081\English\english 6.pdf" target="_blank">Province 6</a>
+                <a href="2081\English\english 7.pdf" target="_blank">Province 7</a>
+            </div>
+        </div>
+        <!-- Mathematics -->
+        <div class="subject">
+            <h2>Math</h2>
+            <div class="sets">
+                <a href="2081\Math\math 1.pdf" target="_blank">Province 1</a>
+                <a href="2081\Math\math 2.pdf" target="_blank">Province 2</a>
+                <a href="2081\Math\math 3.pdf" target="_blank">Province 3</a>
+                <a href="2081\Math\math 4.pdf" target="_blank">Province 4</a>
+                <a href="2081\Math\math 5.pdf" target="_blank">Province 5</a>
+                <a href="2081\Math\math 6.pdf" target="_blank">Province 6</a>
+                <a href="2081\Math\math 7.pdf" target="_blank">Province 7</a>
+            </div>
+        </div>
+        <!-- Science-->
+        <div class="subject">
+            <h2>Science</h2>
+            <div class="sets">
+                <a href="2081\Science\science 1.pdf" target="_blank">Province 1</a>
+                <a href="2081\Science\science 2.pdf" target="_blank">Province 2</a>
+                <a href="2081\Science\science 3.pdf" target="_blank">Province 3</a>
+                <a href="2081\Science\science 4.pdf" target="_blank">Province 4</a>
+                <a href="2081\Science\science 5.pdf" target="_blank">Province 5</a>
+                <a href="2081\Science\science 6.pdf" target="_blank">Province 6</a>
+                <a href="2081\Science\science 7.pdf" target="_blank">Province 7</a>
+            </div>
+        </div>
+
+         <!-- Social-->
+        <div class="subject">
+            <h2>Social</h2>
+            <div class="sets">
+                <a href="2081\Social\social 1.pdf" target="_blank">Province 1</a>
+                <a href="2081\Social\social 2.pdf" target="_blank">Province 2</a>
+                <a href="2081\Social\social 3.pdf" target="_blank">Province 3</a>
+                <a href="2081\Social\social 4.pdf" target="_blank">Province 4</a>
+                <a href="2081\Social\social 5.pdf" target="_blank">Province 5</a>
+                <a href="2081\Social\social 6.pdf" target="_blank">Province 6</a>
+                <a href="2081\Social\social 7.pdf" target="_blank">Province 7</a>
+            </div>
+        </div>
+        <div class="subject">
+            <h2>Economics</h2>
+            <div class="sets">
+                <a href="2081\optional_subjects\Economics.pdf">Questions 1</a>
+                <a href="2081\optional_subjects\eco 2.pdf">Questions 2</a>
                
             </div>
         </div>
         <div class="subject">
-            <h2>Terms and Conditions</h2>
+            <h2>Account</h2>
             <div class="sets">
-               
-                <a href="terms&condtions.html">Terms and Conditions</a>
-               
+                <a href="2081\optional_subjects\account.pdf">Question</a>
+                
             </div>
         </div>
+        <div class="subject">
+            <h2>Optional Math</h2>
+            <div class="sets">
+                <a href="2081\optional_subjects\opt. math.pdf">Question 1</a>
+                <a href="2081\optional_subjects\opt_math 2.pdf">Question 2</a>
+            </div>
+        </div>
+        <div class="subject">
+            <h2>Computer Science</h2>
+            <div class="sets">
+                <a href="2081\optional_subjects\computer Science.pdf">Question</a>
+                
+            </div>
+        </div>
+</div>
+
+    
     </main>
+<footer>
+  <p>
+    <a href="privacy_policy.html">Privacy Policy</a> | 
+    <a href="terms&condtions.html">Terms and Conditions</a>
+  </p>
+  <p>&copy; 2025 Question Bank. All rights reserved.</p>
+</footer>
+
+<script>
+  function showYear(yearId, btn) {
+    // Hide all year contents
+    document.querySelectorAll('.year-content').forEach(div => {
+      div.classList.remove('active');
+    });
+
+    // Show selected year content
+    document.getElementById(yearId).classList.add('active');
+
+    // Update active button state
+    document.querySelectorAll('.appbar button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
 </body>
 </html>
